@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --color-brand-primary: 81 153 69;
+  --color-auth-text: 36 36 36;
+  --color-auth-page: 85 85 85;
+  --color-auth-description: 89 89 89;
+  --color-auth-title: 91 91 91;
+  --color-auth-header: 179 179 179;
+  --color-auth-border: 166 166 166;
+  --color-auth-card: 199 199 199;
+  --color-auth-chrome: 71 71 71;
+  --font-size-brand: 14px;
+  --line-height-brand: 1.286;
+}
+
+@layer base {
+  html {
+    font-size: var(--font-size-brand);
+    line-height: var(--line-height-brand);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html,
+  body {
+    @apply m-0 h-full overflow-hidden bg-slate-100 font-sans text-slate-600;
+  }
+}
+
+@layer components {
+  #app {
+    @apply relative h-full overflow-hidden overflow-y-auto;
+  }
+}

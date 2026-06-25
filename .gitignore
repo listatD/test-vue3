@@ -1,0 +1,7 @@
+node_modules
+dist
+.env.local
+auto-imports.d.ts
+components.d.ts
+typed-router.d.ts
+*.tsbuildinfo
